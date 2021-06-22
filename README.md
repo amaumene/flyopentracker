@@ -1,6 +1,6 @@
 ## What is this repository ?
 
-This repository deploys an instance of [opentracker](http://erdgeist.org/arts/software/opentracker/) on [fly](fly.io), if you want to deploy your own, just fork this repo!
+This repository deploys an instance of [opentracker](http://erdgeist.org/arts/software/opentracker/) on [fly](http://fly.io), if you want to deploy your own, just fork this repo!
 
 The GitHub action will rebuild and redeploy a fresh one every day.
 
