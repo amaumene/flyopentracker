@@ -7,10 +7,10 @@ RUN apk add --no-cache \
 	g++ \
 	make \
 	git \
-	cvs \
+	#cvs \
 	zlib-dev \
 
-	&& cvs -d :pserver:cvs@cvs.fefe.de:/cvs -z9 co libowfat \
+	&& git clone https://github.com/gebi/libowfat.git \
 	&& cd libowfat \
 	&& make \
 	&& cd ../ \
@@ -26,7 +26,7 @@ RUN apk add --no-cache \
 
 	&& mv /tmp/opentracker/opentracker /bin/ \
 
-	&& apk del gcc g++ make git cvs zlib-dev \
+	&& apk del gcc g++ make git zlib-dev \
 	&& rm -rf /var/cache/apk/* /tmp/* 
 
 EXPOSE 6969
